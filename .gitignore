@@ -1,0 +1,6 @@
+.env
+misc/
+.env.template
+__pycache__
+__pycache__/
+diagnostic.py
