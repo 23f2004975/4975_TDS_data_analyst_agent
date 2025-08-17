@@ -93,6 +93,10 @@ def parse_keys_and_types(raw_questions: str):
 
 @tool
 def scrape_url_to_dataframe(url: str) -> Dict[str, Any]:
+    """
+    Fetch a URL and return data as a DataFrame (supports HTML tables, CSV, Excel, Parquet, JSON, and plain text).
+    Always returns {"status": "success", "data": [...], "columns": [...]} if fetch works.
+    """
 
     print(f"Scraping URL: {url}")
     try:
